@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <div class="main-component">
+      <form action="">
+        <h2 class="border-btm">Customer Details:</h2>
+        <div class="form">
+          <h4>Name</h4>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field two" name="name" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">First Name</span>
+            </label>
+            <label class="input">
+              <input class="input__field two" name="name" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">Last Name</span>
+            </label>
+          </div>
+          <h4>Address</h4>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field" name="add" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">Street Address</span>
+            </label>
+          </div>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field" name="add" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">Street Address Line 2</span>
+            </label>
+          </div>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field two" name="name" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">City</span>
+            </label>
+            <label class="input">
+              <input class="input__field two" name="name" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">State / Province</span>
+            </label>
+          </div>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field two" name="pin" onchange="validateElement(this)" type="text" placeholder=" " />
+              <span class="input__label">Postal / Zip Code</span>
+            </label>
+            <label class="input" style="visibility: hidden">
+              <span class="input__label"></span>
+            </label>
+          </div>
+          <h4>Phone Number</h4>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field two" name="phone" onchange="validateElement(this)" name="phone" type="text" placeholder=" " />
+              <span class="input__label">Phone</span>
+            </label>
+            <label class="input" style="visibility: hidden">
+              <span class="input__label"></span>
+            </label>
+          </div>
+          <h4>E-mail</h4>
+          <div class="parent">
+            <label class="input">
+              <input class="input__field two" name="email" onchange="validateElement(this)" name="email" type="text" placeholder=" " />
+              <span class="input__label">Email</span>
+            </label>
+            <label class="input" style="visibility: hidden">
+              <span class="input__label"></span>
+            </label>
+          </div>
+          <h4>How did you hear about us?</h4>
+          <div class="parent">
+            <label class="input select">
+              <select class="input__field two">
+                <option value="">Please Select</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Internet">Internet</option>
+                <option value="Magazine">Magazine</option>
+                <option value="Other">Other (Please specify...)</option>
+              </select>
+              <span class="input__label"></span>
+            </label>
+            <label class="input" style="visibility: hidden">
+              <span class="input__label"></span>
+            </label>
+          </div>
+          <h4>Feedback about us:</h4>
+          <div class="parent">
+            <label class="input">
+              <textarea class="input__field" name="area" onchange="validateElement(this)" placeholder=" "></textarea>
+            </label>
+          </div>
+          <h4>Suggestions if any for further improvement:</h4>
+          <div class="parent">
+            <label class="input">
+              <textarea class="input__field" name="area" onchange="validateElement(this)" placeholder=" "></textarea>
+            </label>
+          </div>
+          <h4>Which products would you like to buy?</h4>
+          <div class="parentcheck parent">
+            <div class="first">
+              <input type="checkbox" value="Phone" class="check" placeholder=" " />
+              <p>Phone</p>
+            </div>
+            <div class="first">
+              <input type="checkbox" value="Laptop" class="check" placeholder=" " />
+              <p>Laptop</p>
+            </div>
+            <div>
+              <input type="checkbox" value="Earphone" class="check" placeholder=" " />
+              <p>Earphone</p>
+            </div>
+          </div>
+          <div class="parentradio parent">
+            <h4>Gender</h4>
+            <input type="radio" name="radio" value="Male" class="check" placeholder=" " />
+            <p>Male</p>
+            <input type="radio" name="radio" value="Female" class="check" placeholder=" " />
+            <p>Female</p>
+            <input type="radio" name="radio" value="Other" class="check" placeholder=" " />
+            <p>Other</p>
+          </div>
+          <div class="parentcheck">
+            <div>
+              <input type="checkbox" value="Table" class="check" onchange="toggleTable(this)" checked/>
+              <p>Table</p>
+            </div>
+          </div>
+          <div class="remove">
+            <h4 style="margin-top: 20px;">Please give reference of any two people whom you feel:</h4>
+            <div class="parent last">
+              <table>
+                <tbody>
+                  <tr>
+                    <th class="none"></th>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>Contact No</th>
+                  </tr>
+                  <tr>
+                    <td class="number">1</td>
+                    <td><input type="text" name="name" onchange="validateElement(this)" /></td>
+                    <td><input type="text" name="add" onchange="validateElement(this)" /></td>
+                    <td><input type="text" name="phone" onchange="validateElement(this)" /></td>
+                  </tr>
+                  <tr>
+                    <td class="number">2</td>
+                    <td><input type="text" name="name" onchange="validateElement(this)" /></td>
+                    <td><input type="text" name="add" onchange="validateElement(this)" /></td>
+                    <td><input type="text" name="phone" onchange="validateElement(this)" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div ><button class="border-btm" type="submit">Submit</button></div>
+      </form>
+      <div class="data">
+        <h4>Data</h4>
+        <div class="table parent" style="margin-bottom: 0;">
+          <table>
+            <tbody id="data-table">
+              <tr>
+                <th style="min-width:28px;">No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Street Address</th>
+                <th>Street Address2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Pin code</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Reference</th>
+                <th>Feedback</th>
+                <th>Suggestions</th>
+                <th>Products</th>
+                <th>Gender</th>
+                <th colspan="2">Actions</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="query-script.js"></script> -->
+  </body>
+</html>

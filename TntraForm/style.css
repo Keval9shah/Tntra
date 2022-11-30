@@ -1,0 +1,244 @@
+@import url("https://rsms.me/inter/inter.css");
+:root{
+  --color-top:#0c0c01;
+}
+body{
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background-color: #f0f6ffdc;
+  /* background-color: rgb(216, 60, 60); */
+}
+.done::after{
+  content:"Done";
+  font-size: 16px;
+  color: green;
+}
+.notproper::after{
+  content: "Not Proper";
+  font-size: 16px;
+  color: red;
+}
+.enterAlphabet::after{
+  content: "Enter Alphabet";
+  font-size: 12px;
+  color: red;
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+.tooShort::after{
+  content: "Too Short";
+  font-size: 12px;
+  color: red;
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+.enter6Digits::after{
+  content: "Enter 6 Digits";
+  font-size: 12px;
+  color: red;
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+.enterValid::after{
+  content: "Enter valid Phone/Email";
+  font-size: 12px;
+  color: red;
+  position: relative;
+  top: 2px;
+  left: 10px;
+}
+.main-component{
+  color: #2c3345;
+  max-width: 800px;
+  width: calc(100% - 50px);
+  margin: 70px auto;
+  background-color: white;
+  box-shadow: 0 4px 4px #57647e36;
+}
+.border-btm{
+  border-bottom: 1px solid rgb(215, 216, 225);
+}
+.main-component h2{
+  margin: 0;
+  padding: 40px 52px;
+  letter-spacing: 0.2px;
+  font-size: 35px;
+  font-weight: 500;
+}
+.form{
+  padding: 40px 52px;
+}
+.data{
+  display: none;
+  margin-bottom: 0;
+  padding: 40px 52px;
+  box-sizing: border-box;
+  border-top: 1px solid rgb(186, 186, 186);
+}
+.table{
+  overflow-x: auto;
+  padding: 2px;
+}
+.table td,.table th{
+  padding: 5px 15px;
+}
+.table th{
+  min-width: 70px;
+  text-align: start;
+}
+.parent{
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
+h4{
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* ----input---- */
+.input {
+  width: 94%;
+  position: relative;
+}
+.two{
+  margin-right: 12%;
+  width: 88% !important;
+}
+.input__label {
+  color: rgb(55, 55, 55);
+  font-weight: 400;
+  position: absolute;
+  left: 10px;
+  top: 0;
+  padding: 3px calc(0.5rem * .5);
+  margin: 11.5px 2px;
+  background: pink;
+  white-space: nowrap;
+  transform: translate(0, 0);
+  transform-origin: 0 0;
+  background: white;
+  transition: transform 120ms ease-in;
+  line-height: 1.2;
+}
+.input__field {
+  outline: none;
+  box-shadow: 1px 1px 1px rgb(177, 177, 177);
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid rgb(186, 186, 186);
+  padding: 12px 22px;
+  padding-top: 14px;
+  font-size: 18px;
+  color: currentColor;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.input__field:focus ~ .input__label, .input__field:not(:placeholder-shown) ~ .input__label {
+  transform: translate(0.25rem, -78%) scale(0.8);
+  color: var(--color-top);
+}
+/* ----input-end---- */
+
+::placeholder{
+  font-size: 18px;
+  color: rgb(55, 55, 55);
+  font-weight: 400;
+}
+select{
+  padding: 12px 16px !important;
+  font-size: 16px !important;
+  border-right: 14px solid transparent !important;
+  /* box-shadow: 1px 1px 0 1px black; */
+}
+textarea{
+  padding: 14px !important;
+  height: 150px;
+  max-width: 100%;
+  min-width: 250px;
+  max-height: 200px;
+  min-height: 120px;
+}
+.parentcheck{
+  display: flex;
+  flex-direction: column;
+}
+.parentcheck div{
+  display: flex;
+  align-items: center;
+}
+.parentradio{
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parentradio h4{
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+.parentradio p{
+  width: fit-content;
+  margin-right: 12px;
+}
+input[type=checkbox]{
+  height: 22px;
+  width: 22px;
+}
+p{
+  display: inline-block;
+  width: 100px;
+  margin: 0;
+  margin-left: 5px;
+}
+.first{
+  margin-bottom: 5px;
+}
+.none{
+  border: none;
+}
+table{
+  border-collapse: collapse;
+}
+tbody{
+  border-radius: 4px;
+
+}
+th,td{
+  border:1px solid rgb(113, 113, 113);
+}
+td input{
+  border: none;
+  outline: none;
+  padding: 4px 10px;
+}
+.number{
+  padding: 5px 15px;
+}
+button{
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #5d5da7;
+  width: 192px;
+  height: 48px;
+  margin: 40px 52px;
+  margin-top: 0;
+}
+button:hover{
+  background-color: #333370;
+}
+.last{
+  padding: 2px;
+  overflow-x: auto;
+  margin-bottom: 0;
+}
+td img{
+  cursor: pointer;
+}
